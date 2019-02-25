@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Voyager60-cache
+LIBS:voyager60NOCAPSLOCKLED-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -4209,7 +4209,7 @@ Wire Wire Line
 Wire Wire Line
 	6325 3975 6225 3975
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-MU U1
+L Voyager60-rescue:ATmega32U4-MU-MCU_Microchip_ATmega U1
 U 1 1 5D93C3AA
 P 8150 7800
 F 0 "U1" H 8150 5914 50  0000 C CNN
@@ -5157,4 +5157,23 @@ $EndComp
 Connection ~ 14150 8800
 Text GLabel 8750 7700 2    50   Input ~ 0
 RGBLED
+$Comp
+L MX_Alps_Hybrids:MX-1.5U K_CAPS3
+U 1 1 5C7F3EA7
+P 575 2650
+F 0 "K_CAPS3" H 472 2558 60  0000 R CNN
+F 1 "MX-1.5U" H 472 2484 20  0000 R CNN
+F 2 "MX_Alps_Hybrid:ALPS-1.5U" H 550 2625 60  0001 C CNN
+F 3 "" H 550 2625 60  0001 C CNN
+	1    575  2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	550  2825 800  2825
+Connection ~ 800  2825
+NoConn ~ 600  2775
+NoConn ~ 700  2675
+Wire Wire Line
+	750  2625 1000 2625
+Connection ~ 1000 2625
 $EndSCHEMATC

@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:Voyager60-cache
+LIBS:Voyager60NOCAPSLOCKLED-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -3211,8 +3211,6 @@ Wire Wire Line
 Wire Wire Line
 	1125 2525 800  2525
 Wire Wire Line
-	800  2525 800  2825
-Wire Wire Line
 	1000 2625 1000 2825
 Connection ~ 1200 2825
 Wire Wire Line
@@ -5169,9 +5167,13 @@ F 3 "" H 550 2625 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
+	550  2825 800  2825
+Connection ~ 800  2825
+NoConn ~ 600  2775
+NoConn ~ 700  2675
+Wire Wire Line
 	750  2625 1000 2625
 Connection ~ 1000 2625
 Wire Wire Line
-	550  2825 800  2825
-Connection ~ 800  2825
+	800  2525 800  2825
 $EndSCHEMATC
